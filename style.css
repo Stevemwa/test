@@ -182,6 +182,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  border-color: black;
 }
 
 /*==================== NAV ====================*/
@@ -311,6 +312,13 @@ width: 199px;
   margin-bottom: var(--mb-2);
 }
 .home__scroll{
+  
+  background-color: rgba(252, 156, 119, 0.226);
+  color: white;
+  padding: 1rem;
+  border-radius: .5rem;
+  align-self: center;
+
   /*display: none;*/
 }
 .home__scroll-button{
@@ -331,6 +339,9 @@ transform: translate(.25rem);
 }
 .home__scroll-arrow{
   font-size: 1.25rem;
+}
+.homerbtns{
+  display: inline-block;
 }
 
 

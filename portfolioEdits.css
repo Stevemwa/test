@@ -8,10 +8,16 @@
   h1 {
     font-size: 50px;
     word-break: break-all;
+    text-align: center;
+    
   }
+  
   
   .row {
     margin: 10px -16px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
   }
   
   /* Add padding BETWEEN each column */
@@ -25,6 +31,9 @@
     float: left;
     width: 33.33%;
     display: none; /* Hide all elements by default */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
   }
   
   /* Clear floats after rows */ 
@@ -36,8 +45,11 @@
   
   /* Content */
   .content {
-    background-color: white;
+    background-color:#faebdf;;
     padding: 10px;
+    border-color: black;
+    border-width: 0.5mm;
+    border-radius: 12px;
   }
   
   /* The "show" class is added to the filtered elements */
@@ -50,15 +62,37 @@
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: white;
+    background-color: rgb(248, 239, 239);
     cursor: pointer;
   }
   
   .btn:hover {
-    background-color: #ddd;
+    background-color: rgb(253, 185, 185);
   }
   
   .btn.active {
     background-color: #666;
     color: white;
   }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #myBtnContainer{
+    display: inline-flex;
+    flex: 100%;
+    max-width: 50%;
+  }
+}

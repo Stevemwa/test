@@ -9,110 +9,113 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="portfolioEdits.css">
 
-    <title>My_Work</title>
+    <title class="title">My_Work</title>
     <title></title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
-        <header class="header" id="header">
+    <header class="header" id="header">
 
-<nav class="nav container">
-  <a href="#" class="nav_logo">Stev0</a>
-  <div class="nav_menu" id="nav_menu">
-<ul class="nav_list grid">
-<li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-estate nav_icon"></i>Home</a></li>
-<li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-user-circle nav_icon"></i>About</a></li>
-<li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-file-alt nav_icon"></i>Skills</a></li>
-<li class="nav_item"><a href="#" class="nav_link"><i class="uil uil-document-layout-center nav_icon"></i>Blog</a></li>
-<li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-scenery nav_icon"></i>Portfolio</a></li>
-<li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-chat nav_icon"></i>Contactme</a></li>
-</ul>
-<i class="uil uil-multiply nav_close" id="nav_close"></i>
-   </div>
-<div class="nav_btns"><div class="nav_toggle" id="nav_toggle"><i class="uil uil-apps"></i></div></div>
-
-</nav>
-        </header>
-
+      <nav class="nav container">
+        <a href="#" class="nav_logo">Stev0</a>
+        <div class="nav_menu" id="nav_menu">
+      <ul class="nav_list grid">
+      <li class="nav_item"><a href="index.html" class="nav_link active-link "><i class="uil uil-estate nav_icon "></i>Home</a></li>
+      <li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-user-circle nav_icon"></i>About</a></li>
+      <li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-file-alt nav_icon"></i>Skills</a></li>
+      <li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-scenery nav_icon"></i>Portfolio</a></li>
+      <li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-chat nav_icon"></i>Contactme</a></li>
+      <li class="nav_item"><a href="Blog.html" class="nav_link"><i class="uil uil-document-layout-center nav_icon"></i>Blog</a></li>
+      </ul>
+      <i class="uil uil-multiply nav_close" id="nav_close"></i>
+         </div>
+      <div class="nav_btns">
+      <!--==================== theme change button ====================-->
+      <i class="uil uil-moon change-theme" id="theme-button"></i>
+      
+        <div class="nav_toggle" id="nav_toggle"><i class="uil uil-apps"></i></div></div>
+      
+      </nav>
+              </header>
 <!-- MAIN (Center website) -->
 <div class="main">
 
   <h1></h1>
   <hr>
   
-  <h2>PORTFOLIO</h2>
+  <h2>MY WORK BLOG</h2>
   
   <div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"> View All </button>
-    <button class="btn" onclick="filterSelection('nature')"> Embedded systems projects</button>
-    <button class="btn" onclick="filterSelection('cars')"> Hardware designs</button>
+    <button class="btn active" onclick="filterSelection('all')"> All </button>
+    <button class="btn" onclick="filterSelection('nature')"> Embeddeds</button>
+    <button class="btn" onclick="filterSelection('cars')"> CAD designs</button>
     <button class="btn" onclick="filterSelection('people')"> Experiences</button>
   </div>
   
   <!-- Portfolio Gallery Grid -->
   <div class="row">
-    <div class="column nature">
+    <div class="column people">
       <div class="content">
-        <img src="img\blogposter.jpg" alt="Mount Kenya Innovation week 2022" style="width:100%">
+        <a href=""><img src="img\blogposter.jpg" alt="Mount Kenya Innovation week 2022" style="width:100%"></a>
         <h4>Mount Kenya Innovation Weeek</h4>
-        <p>Three top take aways <br>1.Start early -get things running early<br>2.Learn to sell an idea to investors have a good presentation and business canvas<br>Enjoy, Learn and meet new people</p>
+        <p>Three top take aways <br>1.Start early -get things running early<br>2.Learn to sell an idea to investors have a good presentation and business canvas<br>3.Enjoy, Learn and meet new people</p>
       </div>
     </div>
     <div class="column nature">
       <div class="content">
-      <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-        <h4>Lights</h4>
-        <p>Lorem ipsum dolor..</p>
+      <img src="https://www.360connect.com/wp-content/uploads/2019/02/Access-Control-Systems-e1551211249883-1024x696.jpg" alt="Lights" style="width:100%">
+        <h4>Control Access System</h4>
+        <p>CDED the room with the cool techie lock,here is the SOLIDWORKS design..</p>
       </div>
     </div>
     <div class="column nature">
       <div class="content">
-      <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-        <h4>Forest</h4>
-        <p>Lorem ipsum dolor..</p>
+      <a href="https://github.com/Stevemwa/I2C-OLED-DISPLAY-Atmega-328P"></a><img src="https://i0.wp.com/www.ktechnics.com/wp-content/uploads/2020/08/s73-3702p01wl.jpg?resize=600%2C600&ssl=1" alt="Nature"  style="width:100%">
+        <h4>Atmega 328P I2C OLED display </h4>
+        <p>Using Atmega 32 to display on an I2C OLED Display</p>
       </div>
     </div>
     
-    <div class="column cars">
+    <div class="column cars nature">
       <div class="content">
-        <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
-        <h4>Retro</h4>
-        <p>Lorem ipsum dolor..</p>
+        <a href="https://github.com/Stevemwa/CMS"><img src="https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1/https%3A%2F%2Fwww.elektormagazine.com%2Fassets%2Fupload%2Fimages%2F9%2F20180518113739_sunfounder-smart-video-car-kit-for-raspberry-pi.jpg" alt="Car" style="width:100%"></a>
+        <h4>Camera Maneuvre Car System</h4>
+        <p>Control movement of the car based on either hand signals, voice input, text input or remotely controlled</p>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+      <a href="https://github.com/Stevemwa/Incubator-embedded-system"><img src="https://user-images.githubusercontent.com/62056954/209951417-58534234-2cee-4f2e-9969-c3de2112df74.png" alt="Car" style="width:100%"></a>
+        <h4>Egg Incubator System</h4>
+        <p>Full design of an egg incubater embedded system</p>
       </div>
     </div>
     <div class="column cars">
       <div class="content">
-      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
-        <h4>Fast</h4>
-        <p>Lorem ipsum dolor..</p>
-      </div>
-    </div>
-    <div class="column cars">
-      <div class="content">
-      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
-        <h4>Classic</h4>
+      <img src="https://www.worldtimeserver.com/img/dst/dst-12-1.png" alt="Car" style="width:100%">
+        <h4>Pending</h4>
         <p>Lorem ipsum dolor..</p>
       </div>
     </div>
   
     <div class="column people">
       <div class="content">
-        <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
-        <h4>Girl</h4>
+        <img src="https://www.worldtimeserver.com/img/dst/dst-12-1.png" alt="Car" style="width:100%">
+        <h4>Pending</h4>
         <p>Lorem ipsum dolor..</p>
       </div>
     </div>
     <div class="column people">
       <div class="content">
-      <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
-        <h4>Man</h4>
+      <img src="https://www.worldtimeserver.com/img/dst/dst-12-1.png" alt="Car" style="width:100%">
+        <h4>Pending</h4>
         <p>Lorem ipsum dolor..</p>
       </div>
     </div>
     <div class="column people">
       <div class="content">
-      <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
-        <h4>Woman</h4>
+      <img src="https://www.worldtimeserver.com/img/dst/dst-12-1.png" alt="Car" style="width:100%">
+        <h4>Pending </h4>
         <p>Lorem ipsum dolor..</p>
       </div>
     </div>
