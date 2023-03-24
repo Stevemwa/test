@@ -6,62 +6,67 @@
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="portfolioEdits.css">
 
     <title class="title">My_Work</title>
     <title></title>
   </head>
   <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-
-      <nav class="nav container">
-        <a href="#" class="nav_logo">Stev0</a>
-        <div class="nav_menu" id="nav_menu">
-      <ul class="nav_list grid">
-      <li class="nav_item"><a href="index.html" class="nav_link active-link "><i class="uil uil-estate nav_icon "></i>Home</a></li>
-      <li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-user-circle nav_icon"></i>About</a></li>
-      <li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-file-alt nav_icon"></i>Skills</a></li>
-      <li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-scenery nav_icon"></i>Portfolio</a></li>
-      <li class="nav_item"><a href="index.html" class="nav_link"><i class="uil uil-chat nav_icon"></i>Contactme</a></li>
-      <li class="nav_item"><a href="Blog.html" class="nav_link"><i class="uil uil-document-layout-center nav_icon"></i>Blog</a></li>
-      </ul>
-      <i class="uil uil-multiply nav_close" id="nav_close"></i>
-         </div>
-      <div class="nav_btns">
-      <!--==================== theme change button ====================-->
-      <i class="uil uil-moon change-theme" id="theme-button"></i>
-      
-        <div class="nav_toggle" id="nav_toggle"><i class="uil uil-apps"></i></div></div>
-      
-      </nav>
-              </header>
+   
 <!-- MAIN (Center website) -->
 <div class="main">
 
-  <h1></h1>
-  <hr>
   
-  <h2>MY WORK BLOG</h2>
+  <header>
+    <div id="brand"><a href="/">Stev0 <i class="uil uil-circuit "></i></a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+    
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    
+ </header>
+ <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <ul class="mobile-menu">
+    <li><a href="/home">Home</a></li>
+    <li><a href="/products">Products</a></li>
+    <li><a href="/about">About</a></li>
+    <li id="login"><a href="/login" >Login</a></li>
+    <li id="signup"><a href="/signup">Signup</a></li>
+  </ul>
+</div>
   
   <div id="myBtnContainer">
     <button class="btn active" onclick="filterSelection('all')"> All </button>
     <button class="btn" onclick="filterSelection('nature')"> Embeddeds</button>
     <button class="btn" onclick="filterSelection('cars')"> CAD designs</button>
+    <button class="btn" onclick="filterSelection('tiny')"> Tiny ML</button>
     <button class="btn" onclick="filterSelection('people')"> Experiences</button>
   </div>
   
   <!-- Portfolio Gallery Grid -->
   <div class="row">
-    <div class="column people">
-      <div class="content">
-        <a href=""><img src="img\blogposter.jpg" alt="Mount Kenya Innovation week 2022" style="width:100%"></a>
-        <h4>Mount Kenya Innovation Weeek</h4>
-        <p>Three top take aways <br>1.Start early -get things running early<br>2.Learn to sell an idea to investors have a good presentation and business canvas<br>3.Enjoy, Learn and meet new people</p>
-      </div>
-    </div>
     <div class="column nature">
+      <div class="content">
+       <a href="https://github.com/odobot/DIGITAL-SAFE"><img src="https://rukminim1.flixcart.com/image/416/416/kehfi4w0/safe-locker/a/g/h/yspc200-yale-original-imafv5sruetcrtz6.jpeg?q=70" alt="Lights" style="width:100%"></a> 
+        <h4>Digital Safe</h4>
+        <p>Mechatronics System Programming group project</p>
+       </div>
+    </div>
+    <div class="column cars">
       <div class="content">
       <img src="https://www.360connect.com/wp-content/uploads/2019/02/Access-Control-Systems-e1551211249883-1024x696.jpg" alt="Lights" style="width:100%">
         <h4>Control Access System</h4>
@@ -70,13 +75,13 @@
     </div>
     <div class="column nature">
       <div class="content">
-      <a href="https://github.com/Stevemwa/I2C-OLED-DISPLAY-Atmega-328P"></a><img src="https://i0.wp.com/www.ktechnics.com/wp-content/uploads/2020/08/s73-3702p01wl.jpg?resize=600%2C600&ssl=1" alt="Nature"  style="width:100%">
+      <a href="https://github.com/Stevemwa/I2C-OLED-DISPLAY-Atmega-328P"><img src="https://i0.wp.com/www.ktechnics.com/wp-content/uploads/2020/08/s73-3702p01wl.jpg?resize=600%2C600&ssl=1" alt="Nature"  style="width:100%"></a>
         <h4>Atmega 328P I2C OLED display </h4>
         <p>Using Atmega 32 to display on an I2C OLED Display</p>
       </div>
     </div>
     
-    <div class="column cars nature">
+    <div class="column cars tiny">
       <div class="content">
         <a href="https://github.com/Stevemwa/CMS"><img src="https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1/https%3A%2F%2Fwww.elektormagazine.com%2Fassets%2Fupload%2Fimages%2F9%2F20180518113739_sunfounder-smart-video-car-kit-for-raspberry-pi.jpg" alt="Car" style="width:100%"></a>
         <h4>Camera Maneuvre Car System</h4>
@@ -90,19 +95,21 @@
         <p>Full design of an egg incubater embedded system</p>
       </div>
     </div>
-    <div class="column cars">
+    <div class="column tiny">
       <div class="content">
-      <img src="https://www.worldtimeserver.com/img/dst/dst-12-1.png" alt="Car" style="width:100%">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFas2ELDaEPQh72rUBr9sTQJXjs1bGppmr-6VkjXf2smYQsDiKdNY3AZvUL97_R1BePZ8&usqp=CAU" alt="Car" style="width:100%">
         <h4>Pending</h4>
         <p>Lorem ipsum dolor..</p>
       </div>
+     
     </div>
   
     <div class="column people">
       <div class="content">
-        <img src="https://www.worldtimeserver.com/img/dst/dst-12-1.png" alt="Car" style="width:100%">
-        <h4>Pending</h4>
-        <p>Lorem ipsum dolor..</p>
+        <a href=""><img src="img\blogposter.jpg" alt="Mount Kenya Innovation week 2022" style="width:100%"></a>
+        <h4>Mount Kenya Innovation Weeek</h4>
+        <p>Three top take aways <br>1.Start early -get things running early<br>2.Learn to sell an idea to investors have a good presentation and business canvas<br>3.Enjoy, Learn and meet new people</p>
+      
       </div>
     </div>
     <div class="column people">

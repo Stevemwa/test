@@ -1,10 +1,104 @@
 
 /* Center website */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
+body {
+  background-color: #fdf6f1;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  align-items: center;
+}
 .main {
     max-width: 1000px;
     margin: auto;
   }
+
+  header a {
+    text-decoration: none;
+  }
   
+  header {
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #brand a {
+    color: #09c372;
+  }
+  ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  ul a {
+    color: white;
+  }
+  
+  ul li {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  #login,
+#signup {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#login {
+  border: 1px solid #498afb;
+}
+
+#signup {
+  border: 1px solid #ff3860;
+}
+
+#signup a {
+  color: #ff3860;
+}
+
+#login a {
+  color: #498afb;
+}
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
   h1 {
     font-size: 50px;
     word-break: break-all;
@@ -45,11 +139,17 @@
   
   /* Content */
   .content {
-    background-color:#f1e8fc;;;
+    background-color:white;
     padding: 10px;
-    border-color: black;
-    border-width: 0.5mm;
-    border-radius: 12px;
+   border-color: black;
+    border-width: 0.3mm;
+    border-radius: 10px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    box-shadow: 0px 13px 15px -15px rgba(0, 0, 0,0.5);
+  }
+  .content:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
   }
   
   /* The "show" class is added to the filtered elements */
@@ -75,6 +175,9 @@
     color: white;
   }
 
+ 
+
+
   /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -93,6 +196,13 @@
   #myBtnContainer{
     display: inline-flex;
     flex: 100%;
-    max-width: 50%;
+    max-width: 70%;
+  }
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
   }
 }
