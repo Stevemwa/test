@@ -10,94 +10,99 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .main {
-    max-width: 1000px;
-    margin: auto;
-  }
-
-  header a {
-    text-decoration: none;
-  }
-  
-  header {
-    padding: 0 20px;
-    background-color: #1d1f1d;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #brand {
-    font-weight: bold;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-  }
-  
-  #brand a {
-    color: #09c372;
-  }
-  ul {
-    list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  ul a {
-    color: white;
-  }
-  
-  ul li {
-    padding: 5px;
-    margin-left: 10px;
-  }
-  
-  ul li:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
-  #login,
-#signup {
-  border-radius: 5px;
-  padding: 5px 8px;
+ max-width: 1000px;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100vh; /* Center vertically within the viewport height */
 }
 
-#login {
-  border: 1px solid #498afb;
-}
 
-#signup {
-  border: 1px solid #ff3860;
-}
-
-#signup a {
-  color: #ff3860;
-}
-
-#login a {
-  color: #498afb;
-}
-.mobile-menu {
-  display: none;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  height: calc(100vh - 50px);
-  width: 100%;
-}
-
-.open .mobile-menu {
+/* Default styling for larger screens */
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
 }
 
-.mobile-menu li {
-  margin-bottom: 10px;
+nav {
+  display: block;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  margin: 0 15px;
+}
+
+
+.mobile-menu{
+  display: none;
+}
+/* Styling for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .mobile-menu{
+    display: block;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  ul li {
+    margin: 10px 0;
+  }
+
+  /* Hide the navigation bar by default on smaller screens */
+  nav {
+    display: none;
+  }
+
+  /* Style the hamburger menu icon */
+  #hamburger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Show the mobile menu when the hamburger icon is clicked */
+  .mobile-menu {
+    display: none;
+  }
+
+  #hamburger-icon.active + .mobile-menu {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   h1 {
     font-size: 50px;
